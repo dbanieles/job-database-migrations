@@ -2,6 +2,9 @@ FROM java
 
 MAINTAINER SequenceIQ
 
+RUN apt-get update
+RUN apt-get install -y netcat
+
 ADD https://github.com/mybatis/migrations/releases/download/mybatis-migrations-3.2.0/mybatis-migrations-3.2.0.zip /opt/mybatis-migrations-3.2.0.zip
 
 # Unpack the distribution
