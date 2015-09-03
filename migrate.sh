@@ -19,10 +19,10 @@ changelog=changelog
 
 CONF
 
-#while ! nc -q 1 $DB_PORT_5432_TCP_ADDR $DB_PORT_5432_TCP_PORT </dev/null;
-#do
-#  echo "Waiting for database"
-#  sleep 10;
-#done
+while ! nc -q 1 $DB_PORT_5432_TCP_ADDR $DB_PORT_5432_TCP_PORT </dev/null;
+do
+  echo "Waiting for database"
+  sleep 10;
+done
 
 /opt/mybatis-migrations-3.2.0/bin/migrate "$@"

@@ -1,4 +1,4 @@
-FROM java
+FROM java:openjdk-7u79-jre
 
 MAINTAINER SequenceIQ
 
