@@ -32,9 +32,9 @@ INSERT INTO message_template (id,name,template,type) VALUES (2,'TASK_TEMPLATE','
 INSERT INTO message_template (id,name,template,type) VALUES (3,'TASK_TEMPLATE','','','Teams') ON CONFLICT (id) DO NOTHING;
 INSERT INTO message_template (id,name,template,type) VALUES (4,'EMAIL_TEMPLATE','Template to send email message','','Email') ON CONFLICT (id) DO NOTHING;
 
-INSERT INTO users (name,email,password,course) VALUES ('Daniele','daniele.baggio@bitsrl.net','test123','DEVOPS');
-INSERT INTO users (name,email,password,course) VALUES ('Davide','davide.rossi@bitsrl.net','test123','DEVOPS');
-INSERT INTO users (name,email,password,course) VALUES ('Marco','marco.verdi@bitsrl.net','test123','DEVOPS');
+INSERT INTO users (name,email,password,course) VALUES ('Daniele','daniele.baggio@mailinator.com','test123','DEVOPS');
+INSERT INTO users (name,email,password,course) VALUES ('Davide','davide.rossi@mailinator.com','test123','DEVOPS');
+INSERT INTO users (name,email,password,course) VALUES ('Marco','marco.verdi@mailinator.com','test123','DEVOPS');
 
 
 -- //@UNDO
